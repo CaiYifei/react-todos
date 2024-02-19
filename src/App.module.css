@@ -1,0 +1,60 @@
+.app {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .inputSection {
+    box-sizing: border-box;
+    width: 600px;
+    height: 40px;
+    padding: 8px;
+    font-size: 22px;
+  }
+
+  .popoverSection {
+    box-sizing: border-box;
+    width: 600px;
+    margin-top: 32px;
+
+    .todosList {
+      padding: 8px 0;
+      max-height: 190px;
+      overflow: auto;
+    }
+
+    .todoItem {
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .checkboxComp {
+        margin-top: 5px;
+      }
+
+      .text {
+        margin-left: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .controlSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border-top: 1px solid gray;
+
+      .btn:hover {
+        cursor: pointer;
+        color: skyblue;
+      }
+    }
+  }
+}
